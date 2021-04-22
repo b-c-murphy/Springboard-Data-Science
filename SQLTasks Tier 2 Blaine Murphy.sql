@@ -110,8 +110,9 @@ RIGHT JOIN Members as m
 	ON m.memid=b.memid
 WHERE b.starttime>='2012-09-14'
 	AND b.starttime<'2012-09-15'
+HAVING cost >30.0
 ORDER BY cost DESC;
--- Needs Fixing to limit to cost>30
+
 
 /* Q9: This time, produce the same result as in Q8, but using a subquery. */
 SELECT 
